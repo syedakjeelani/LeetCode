@@ -4,8 +4,7 @@ class Solution(object):
         heapq.heapify(heap)
         for n in nums[k:]:
             if n > heap[0]:
-                heapq.heappush(heap,n)
-                heapq.heappop(heap)
+                heapq.heapreplace(heap,n)
         return heap[0]
         
         
